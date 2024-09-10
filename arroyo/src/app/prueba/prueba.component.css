@@ -1,0 +1,13 @@
+p{
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    color: blueviolet;
+}
+img{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}

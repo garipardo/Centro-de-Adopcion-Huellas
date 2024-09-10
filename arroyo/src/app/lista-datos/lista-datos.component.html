@@ -1,0 +1,18 @@
+<div class="lista-contenedor">
+    <h1>Lista de datos</h1>
+    <input [(ngModel)]="nuevoDato" placeholder="Nueva tarea" />
+    <button (click)="agregarDatos()">Agregar</button>
+
+    <ul>
+        <li *ngFor="let dato of datos; let i=index" >
+        <span [class.estado]="dato.estado">
+
+        {{dato.nombre}}
+        </span>
+        <button (click)="verificarDato(i)">
+            {{dato.estado ? 'Verificado':'Completado'}}
+        </button>
+        <button (click)="eliminarDato(i)">Eliminar Dato</button>
+        </li>
+    </ul>
+</div>
