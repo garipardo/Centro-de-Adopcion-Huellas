@@ -1,25 +1,25 @@
 <div class="contenedor">
-    <mat-card>
+    <mat-card *ngFor="let mascota of mascotas" class="contendorCard">
         
         <mat-card-header>
             <mat-card-title>
-                PruebaTarjeta
+               {{mascota.nombre}}
             </mat-card-title>
             <mat-card-subtitle>
-                TarjetaMascotas
+               {{mascota.raza}} - {{mascota.edad}} Años
             </mat-card-subtitle>
-            
-
-        </mat-card-header>
-        <img mat-card-image src="https://www.respetmascotas.com/_Assets/img/181129-Imagen-AlimentacionMascotas.jpg"/>
+      </mat-card-header>
+        <img mat-card-image [src]="mascota.imagen"/>
         <mat-card-content>
-            <p>The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.</p>
+            <p>{{mascota.descripcion}}</p>
         </mat-card-content>
         
-        <mat-card-actions>
-            <button mat-card>Prueba Boton</button>
-            <button mat-flat-button>Prueba Boton</button>
+        <mat-card-actions class="botones">
+            <button mat-button>Adoptar</button>
+            <button mat-flat-button>Contactar</button>
         </mat-card-actions>   
     </mat-card>
+
+
 
 </div>
