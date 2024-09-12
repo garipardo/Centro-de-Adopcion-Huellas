@@ -63,6 +63,48 @@ export class TarjetasComponent {
       imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
       descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
     },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    },
+    {
+      nombre:'Gasparin',
+      edad:'2',
+      raza:'Criollo',
+      imagen:'https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos/11001596-2-esl-MX/Los-perros-en-libertad-distinguen-las-expresiones-faciales-de-los-humanos.jpg',
+      descripcion:'Gasparin es un perro criollo jugueton, le encata correr y esta con todas su vacunas',
+    }
     
   ];
 }
