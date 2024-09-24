@@ -1,17 +1,31 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 //Importacion 
 import { CommonModule } from '@angular/common';
+import { DialogoComponent } from '../dialogo/dialogo.component';
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-tarjetas',
   standalone: true,
-  imports: [MatCardModule,MatButtonModule, CommonModule],
+  imports: [MatCardModule,MatButtonModule, CommonModule,DialogoComponent],
   templateUrl: './tarjetas.component.html',
   styleUrl: './tarjetas.component.css'
 })
 export class TarjetasComponent {
+  readonly alerta=inject(MatDialog);
+  //METODOS DE LA CLASE
+  mostrarAlerta(enterAnimationDuration:string, exitAnimationDuration: string):void{
+    this.alerta.open(DialogoComponent, {
+      width:'300px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
+
+
   //Datos locales para las macotas
   mascotas=[
     {
@@ -107,4 +121,5 @@ export class TarjetasComponent {
     }
     
   ];
+ 
 }
