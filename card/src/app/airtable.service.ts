@@ -18,10 +18,10 @@ export class AirtableService {
     //Paso 5. Configurar la conexion con Airtable para token y el idBase
     Airtable.configure({
       endpointUrl:'https://api.airtable.com',
-      apiKey:environment.airtableToken
+      apiKey:'suToken'
     });
     //Paso 6. Configurar el id de la base de datos
-    this.base=Airtable.base(environment.airtableIdBase);
+    this.base=Airtable.base('suIdBaseDatos');
   }
   //Paso 7. Crear el metodo para obtener los registros de la tabla Mascotas
   obtenerMascotas():
@@ -29,7 +29,7 @@ export class AirtableService {
     return from(new Promise<any[]>((resolve,reject)=>{
       const registros:any[]=[];
       this.base('Mascotas').select({
-        view:'Grid View'
+        view:'Grid view'
       }).eachPage(
         function page(records: any[],siguiente: () => void){
           //Agregar los registros obtenidos a nuestra lista

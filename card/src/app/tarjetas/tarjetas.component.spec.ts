@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TarjetasComponent } from './tarjetas.component';
+import { environment } from '../../environments/environment';
 
 describe('TarjetasComponent', () => {
   let component: TarjetasComponent;
