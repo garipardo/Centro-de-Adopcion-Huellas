@@ -18,10 +18,10 @@ export class AirtableService {
     //Paso 5. Configurar la conexion con Airtable para token y el idBase
     Airtable.configure({
       endpointUrl:'https://api.airtable.com',
-      apiKey:'suToken'
+      apiKey:''
     });
     //Paso 6. Configurar el id de la base de datos
-    this.base=Airtable.base('suIdBaseDatos');
+    this.base=Airtable.base('');
   }
   //Paso 7. Crear el metodo para obtener los registros de la tabla Mascotas
   obtenerMascotas():
@@ -41,7 +41,8 @@ export class AirtableService {
               sexo:registro.get('Sexo'),
               contacto:registro.get('Contacto'),
               foto:registro.get('Foto'),
-              tipoMascota:registro.get('TipoMascota')
+              tipoMascota:registro.get('TipoMascota'),
+              descripcion:registro.get('Descripcion')
             });
           });
           siguiente();
