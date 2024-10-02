@@ -28,6 +28,14 @@ export class TarjetasComponent {
       exitAnimationDuration,
     });
   }
+  //Metodo para enviar a whatsapp
+   //Metodo para redireccionar a Whatsapp
+   enviarWhatsapp(numero:string){
+    //const numero='69596229';
+    const mensaje='Necesito mayor informacion de la mascota';
+    const url= `https://api.whatsapp.com/send?phone=${numero}&text=${mensaje}`;
+    window.open(url);
+  }
   //Lista de las mascota que seran obtenidas de Airtable
   mascotas:any[]=[];
 

@@ -6,6 +6,7 @@ import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FormularioComponent } from '../formulario/formulario.component';
 import { PantallainicioComponent } from '../pantallainicio/pantallainicio.component';
+import { PruebaBotonComponent } from '../prueba-boton/prueba-boton.component';
 
 @Component({
   selector: 'app-navegacion',
@@ -16,7 +17,8 @@ import { PantallainicioComponent } from '../pantallainicio/pantallainicio.compon
     //AlertasComponent,
     MatButtonModule,
     FormularioComponent,
-    PantallainicioComponent
+    PantallainicioComponent,
+    PruebaBotonComponent
 
   ],
   templateUrl: './navegacion.component.html',
