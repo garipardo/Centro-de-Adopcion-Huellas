@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 //importar los tabs
 import {MatTabsModule} from '@angular/material/tabs';
-//import { TarjetasComponent } from '../tarjetas/tarjetas.component';
+import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 //import { AlertasComponent } from '../alertas/alertas.component';
 import { MatButtonModule } from '@angular/material/button';
-//import { FormularioReactivoComponent } from '../formulario-reactivo/formulario-reactivo.component';
+import { FormularioComponent } from '../formulario/formulario.component';
 import { PantallainicioComponent } from '../pantallainicio/pantallainicio.component';
 
 @Component({
@@ -12,10 +12,10 @@ import { PantallainicioComponent } from '../pantallainicio/pantallainicio.compon
   standalone: true,
   imports: [
     MatTabsModule,
-    //TarjetasComponent,
+    TarjetasComponent,
     //AlertasComponent,
     MatButtonModule,
-    //FormularioReactivoComponent,
+    FormularioComponent,
     PantallainicioComponent
 
   ],
