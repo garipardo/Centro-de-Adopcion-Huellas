@@ -58,4 +58,31 @@ export class AirtableService {
       );
     }));
   }
+
+  //Metodo para añadir un nuevo registro a la base de datos
+  añadirAdoptante(datos:any):
+  Observable<any>{
+    return from(
+      new Promise<any>((resolve,reject)=>{
+        this.base("Adoptantes").create([
+          {
+            "fields":{
+              "Nombre":datos.nombre,
+              "Celular":datos.celular,
+              "Correo":datos.correo,
+              "TipoMascota":datos.tipoMascota,
+              "NombreMascota":datos.nombreMascota,
+              "Direccion":datos.direccion,
+              "Ci":datos.ci
+            }
+          }
+        ], function(error:any, registros:any[]){
+          if(error){
+            reject(error);
+            return;
+          }
+          resolve(registros);
+        });      
+  }));
+  }
 }
