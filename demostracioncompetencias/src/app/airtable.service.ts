@@ -67,13 +67,14 @@ export class AirtableService {
         this.base("Adoptantes").create([
           {
             "fields":{
-              "Nombre":datos.nombre,
-              "Celular":datos.celular,
-              "Correo":datos.correo,
-              "TipoMascota":datos.tipoMascota,
-              "NombreMascota":datos.nombreMascota,
-              "Direccion":datos.direccion,
-              "Ci":datos.ci
+              "nombre":datos.nombre,
+              "celular":datos.celular,
+              "correo":datos.correo,
+              "tipoMascotas":datos.tipoMascota,
+              "nombreMascota":datos.nombreMascota,
+              "razon":datos.razon,
+              "direccion":datos.direccion,
+              "ci":datos.ci
             }
           }
         ], function(error:any, registros:any[]){
