@@ -7,6 +7,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormularioComponent } from '../formulario/formulario.component';
 import { PantallainicioComponent } from '../pantallainicio/pantallainicio.component';
 import { PruebaBotonComponent } from '../prueba-boton/prueba-boton.component';
+import { VoluntariosComponent } from '../voluntarios/voluntarios.component';
+import { AdopcionesComponent } from '../adopciones/adopciones.component';
 
 @Component({
   selector: 'app-navegacion',
@@ -18,7 +20,9 @@ import { PruebaBotonComponent } from '../prueba-boton/prueba-boton.component';
     MatButtonModule,
     FormularioComponent,
     PantallainicioComponent,
-    PruebaBotonComponent
+    PruebaBotonComponent,
+    VoluntariosComponent,
+    AdopcionesComponent
 
   ],
   templateUrl: './navegacion.component.html',

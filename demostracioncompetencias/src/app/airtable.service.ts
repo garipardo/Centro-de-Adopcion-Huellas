@@ -59,6 +59,43 @@ export class AirtableService {
     }));
   }
 
+  //Paso 7. Crear el metodo para obtener los registros de la tabla Mascotas
+  obtenerAdoptantes():
+  Observable<any[]>{
+    return from(new Promise<any[]>((resolve,reject)=>{
+      const registros:any[]=[];
+      this.base('Adoptantes').select({
+        view:'Grid view'
+      }).eachPage(
+        function page(records: any[],siguiente: () => void){
+          //Agregar los registros obtenidos a nuestra lista
+          records.forEach(registro=>{
+            registros.push({
+              id:registro.id,
+              nombre:registro.get('nombre'),
+              celular:registro.get('celular'),
+              correo:registro.get('correo'),
+              tipoMascota:registro.get('tipoMascotas'),
+              nombreMascota:registro.get('nombreMascota'),
+              razon:registro.get('razon'),
+              direccion:registro.get('direccion'),
+              ci:registro.get('ci')
+            });
+          });
+          siguiente();
+
+        },
+        function salir(error: any){
+          if(error){
+            reject(error);
+          }else{
+            resolve(registros);
+          }
+        }
+      );
+    }));
+  }
+  
   //Metodo para añadir un nuevo registro a la base de datos
   añadirAdoptante(datos:any):
   Observable<any>{
